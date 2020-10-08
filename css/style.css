@@ -1,0 +1,185 @@
+body {
+  background-color: #cfa0cc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header {
+  margin-top: 10px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 799px) {
+  nav {
+    background-color: thistle;
+  }
+
+  .dropdown {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .dropdown {
+    display: block;
+    animation-delay: 5s;
+  }
+
+  header li {
+    margin-top: 5px;
+    list-style: none;
+  }
+
+  .btn {
+    width: 50%;
+    height: 50px;
+  }
+
+  .btn {
+    box-shadow: 0 0 40px 40px #b07df7 inset, 0 0 0 0 #8136eb;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 10px 0 #8136eb inset, 0 0 10px 4px #b07df7;
+  }
+}
+
+@media (min-width: 800px) {
+  #btnMenu {
+    display: none;
+  }
+
+  header ul {
+    background-color: #8c54c8;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 10px;
+    margin: auto;
+    width: 95%;
+    height: 35px;
+    display: flex;
+  }
+
+  header li {
+    list-style: none;
+    float: left;
+    margin: auto;
+  }
+
+  .btn {
+    box-shadow: 0 0 40px 40px #b07df7 inset, 0 0 0 0 #8136eb;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+  }
+
+  .btn:hover {
+    box-shadow: 0 0 10px 0 #8136eb inset, 0 0 10px 4px #b07df7;
+  }
+}
+
+@media (min-width: 1024px) {
+  header ul {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  header ul {
+    width: 80%;
+  }
+}
+
+header a {
+  text-decoration: none;
+}
+
+.modal-body {
+  height: 500px;
+}
+
+.modal-body label {
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal-body input {
+  font-size: 30px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-body .btnCalc {
+  background: #8c00ff;
+  border-radius: 20px;
+  height: 50px;
+  color: #ffffff;
+  font-family: Open Sans;
+  margin: 10px;
+  width: 185px;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 12px;
+  box-shadow: 1px 1px 6px 0px #000000;
+  text-shadow: 1px 1px 6px #000000;
+  border: solid #910cfd 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.radio {
+  float: left;
+}
+
+#resultCalcParcela,
+#resultPairOrOdd,
+#HigherNumber,
+#resultTest,
+#valueFinal,
+#resultCalcParcela,
+#resulIMC,
+#incomeTax,
+#calculadora {
+  font-size: 30px;
+}
+
+#sex {
+  width: 150px;
+  border-radius: 5px;
+  color: #8c00ff;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+main p {
+  font-size: 14px;
+}
+
+main table {
+  margin: auto;
+  border: 2px solid black;
+}
+
+table tr,
+table th,
+table td {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid black;
+}
+
+footer {
+  margin: 10px;
+  background-color: black;
+  color: white;
+}

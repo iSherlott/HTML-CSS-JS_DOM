@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icon_cat.png"
+      type="image/x-icon"
+    />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="menu" name="menu" />
+        <label id="btnMenu" for="menu"
+          >Menu <i class="fa fa-caret-down"></i
+        ></label>
+        <ul class="dropdown">
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex1"
+            >
+              Exercises 01
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex2"
+            >
+              Exercises 02
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex3"
+            >
+              Exercises 03
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex4"
+            >
+              Exercises 04
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex5"
+            >
+              Exercises 05
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex6"
+            >
+              Exercises 06
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex7"
+            >
+              Exercises 07
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="btn"
+              data-toggle="modal"
+              data-target="#myModal_ex8"
+            >
+              Exercises 08
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Exercio 1 -->
+    <div class="modal fade" id="myModal_ex1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Parcelamentos com juros simples</h2>
+          </div>
+          <div class="modal-body">
+            <label>Digite o valor total da compra</label><br />
+            <input type="number" id="buy" /><br />
+            <label>Quantas parcelas</label><br />
+            <input type="number" id="installment" /><br />
+            <br />
+            <button class="btnCalc" onclick="calc()">Calcular</button>
+            <span id="resultCalcParcela"></span>
+            <span id="resultCalcValor"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 2 -->
+    <div class="modal fade" id="myModal_ex2" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Impar ou Par</h2>
+          </div>
+          <div class="modal-body">
+            <label>Digite um número</label><br />
+            <input type="number" id="pairOrOdd" /><br />
+
+            <label>Vamos descobri se o número é impar ou par?</label>
+            <button class="btnCalc" onclick="pairOrOdd()">Descobri</button>
+            <span id="resultPairOrOdd"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 3 -->
+    <div class="modal fade" id="myModal_ex3" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Qual número é maior</h2>
+          </div>
+          <div class="modal-body">
+            <label>Digite o primeiro número</label><br />
+            <input type="number" id="valor1" /><br />
+            <label>Digite o segundo número</label><br />
+            <input type="number" id="valor2" /><br />
+            <br />
+            <button class="btnCalc" onclick="whichNumberIsHigher()">
+              Qual é maior
+            </button>
+            <span id="HigherNumber"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 4 -->
+    <div class="modal fade" id="myModal_ex4" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Calcular nota</h2>
+          </div>
+          <div class="modal-body">
+            <label>Informe sua primeira nota</label><br />
+            <input type="number" id="nota1" /><br />
+            <label>Informe sua segunda nota</label><br />
+            <input type="number" id="nota2" /><br />
+            <label>Informe sua terceira nota</label><br />
+            <input type="number" id="nota3" /><br />
+            <br />
+            <button class="btnCalc" onclick="test()">Fui aprovado?</button>
+            <span id="resultTest"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 5 -->
+    <div class="modal fade" id="myModal_ex5" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Forma de pagamento</h2>
+          </div>
+          <div class="modal-body">
+            <label>Informa o valor da compra</label><br />
+            <input type="number" id="valueBuy" /><br /><br />
+            <label>Qual é a modalidade de pagamento?</label><br />
+            <input type="number" id="payment" /><br />
+            <embed
+              type="text/html"
+              src="./embad.html"
+              width="150"
+              height="110"
+            />
+            <br />
+            <button class="btnCalc" onclick="payment()">Calcular</button>
+            <span id="valueFinal"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 6 -->
+    <div class="modal fade" id="myModal_ex6" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Calculadora de IMC</h2>
+          </div>
+          <div class="modal-body">
+            <label>Altura</label><br />
+            <input type="number" id="height" /><br />
+            <label>Peso</label><br />
+            <input type="number" id="weight" /><br />
+            <br />
+            <select id="sex">
+              <option value="noSelect" selected disabled>Sexo</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+            </select>
+            <br />
+            <button class="btnCalc" onclick="calcIMG()">Calcular</button>
+            <span id="resulIMC"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 7 -->
+    <div class="modal fade" id="myModal_ex7" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Calculo de imposto de renda</h2>
+          </div>
+          <div class="modal-body">
+            <label>Informe o seu salario</label><br />
+            <input type="number" id="salary" /><br />
+            <br />
+            <button class="btnCalc" onclick="incomeTax()">Calcular</button>
+            <span id="incomeTax"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Exercio 8 -->
+    <div class="modal fade" id="myModal_ex8" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h2 class="modal-title">Calculadora</h2>
+          </div>
+          <div class="modal-body">
+            <label>Primeiro operador</label><br />
+            <input type="number" id="operador1" /><br />
+            <label>Segundo operador</label><br />
+            <input type="number" id="operador2" /><br />
+            <br />
+            <select id="opc">
+              <option value="noSelect" selected disabled>Operação</option>
+              <option value="Soma">Soma</option>
+              <option value="Sobtração">Sobtração</option>
+              <option value="Miltiplicação">Miltiplicação</option>
+              <option value="Divisão">Divisão</option>
+            </select>
+            <br />
+            <button class="btnCalc" onclick="calculadora()">Calcular</button>
+            <span id="calculadora"></span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h1>Exercícios</h1>
+      <p>
+        <b>1)</b> Crie um script que solicite ao usuário o valor total de uma
+        compra e a quantidade de parcelas. O sistema deve imprimir o valor das
+        parcelas de acordo com os juros da tabela abaixo.
+      </p>
+      <table>
+        <tr>
+          <th>Nº Parcelas</th>
+          <th>% de juros</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>7</td>
+        </tr>
+      </table>
+      <p>
+        <b>2)</b> Faça um script que receba um número inteiro e mostre um alerta
+        dizendo se esse número é par ou ímpar.
+      </p>
+      <p>
+        <b>3)</b> Faça um script que receba dois números inteiros e mostre qual
+        é o maior ou se são iguais.
+      </p>
+      <p>
+        <b>4)</b> Faça um script que receba três notas de prova. As notas podem
+        ser de 0~10. Calcule e mostre a média do aluno junto com o conceito
+        conforme regras abaixo
+      </p>
+      <table>
+        <tr>
+          <th>Média</th>
+          <th>Conceito</th>
+        </tr>
+        <tr>
+          <td>>= 6</td>
+          <td>APROVADO</td>
+        </tr>
+        <tr>
+          <td>>= 3 E <6</td>
+          <td>EXAME</td>
+        </tr>
+        <tr>
+          <td>< 3</td>
+          <td>REPROVADO</td>
+        </tr>
+      </table>
+      <p>
+        <b>5)</b> Elabore um script que leia o valor de um produto e o código da
+        modalidade de pagamento que o usuário escolheu. Exiba um alerta com o
+        valor real do produto e o valor a ser pago (conforme tabela),
+      </p>
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Modalidade</th>
+          <th>Condições de pagamento</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>À vista</td>
+          <td>10% de desconto</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Débito</td>
+          <td>2% de juros</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Crédito</td>
+          <td>7% de juros</td>
+        </tr>
+      </table>
+      <p>
+        <b>6)</b> Faça um script que leia a altura, o peso e o sexo de uma
+        pessoa. Mostre em um alerta o IMC (Índice de Massa Corporal) da pessoa e
+        a categoria na qual se enquadra segundo a OMS (Organização Mundial de
+        Saúde).
+      </p>
+      <p>
+        <b>7)</b> Crie um script que calcule o imposto de renda de um salário
+        informado, respeitando a faixa salarial conforme apresentado na tabela.
+        O resultado é a alíquota sobre o salário informado. Apresente um alerta
+        com este valor.
+      </p>
+      <table>
+        <tr>
+          <th>Faixa salarial</th>
+          <th>Alíquota</th>
+        </tr>
+        <tr>
+          <td>Até R$ 1.434</td>
+          <td>0% (isento)</td>
+        </tr>
+        <tr>
+          <td>De R$ 1.434 a R$ 2.150</td>
+          <td>7,5%</td>
+        </tr>
+        <tr>
+          <td>De R$ 2.150 a R$ 2.866</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td>De R$ 2.866 a R$ 3.582</td>
+          <td>22,5%</td>
+        </tr>
+        <tr>
+          <td>Acima de R$ 3.582</td>
+          <td>27,5%</td>
+        </tr>
+      </table>
+      <p>
+        <b>8)</b> Crie uma calculadora que aceita dois valores digitados. O
+        usuário também deverá informar um código relativo a operação que ele
+        deseja efetuar.
+      </p>
+      <table>
+        <tr>
+          <th>Código</th>
+          <th>Operação</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Soma</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Subtração</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Multiplicação</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Divisão</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      Site desenvolvido para atividade da UNICSUL Analise e Desenvolvimento de
+      Sistema 2° Semestre - Total autoria do Sherlott Silva
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
