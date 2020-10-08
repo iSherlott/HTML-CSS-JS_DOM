@@ -193,25 +193,25 @@ function incomeTax() {
   } else if (salary > 1434 && salary <= 2150) {
     document.getElementById(
       "incomeTax"
-    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 1.075).toFixed(
+    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 0.075).toFixed(
       2
     )}`;
   } else if (salary > 2150 && salary <= 2866) {
     document.getElementById(
       "incomeTax"
-    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 1.15).toFixed(
+    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 0.15).toFixed(
       2
     )}`;
   } else if (salary > 2866 && salary <= 3582) {
     document.getElementById(
       "incomeTax"
-    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 1.225).toFixed(
+    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 0.225).toFixed(
       2
     )}`;
   } else if (salary > 3582) {
     document.getElementById(
       "incomeTax"
-    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 1.275).toFixed(
+    ).innerHTML = `<br />O valor a ser pago é de R$ ${(salary * 0.275).toFixed(
       2
     )}`;
   } else {
